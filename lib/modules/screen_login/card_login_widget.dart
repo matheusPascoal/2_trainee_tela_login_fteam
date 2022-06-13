@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tela_login_fteam/modules/screen_login/circle_check_login.dart';
-import 'package:tela_login_fteam/modules/screen_registration/screen_cadastro.dart';
+import 'package:tela_login_fteam/modules/screen_registration/screen_registration.dart';
 import 'package:tela_login_fteam/theme/color.dart';
 import 'package:tela_login_fteam/widgets/generic_arrow_icon_button/generic_arrow_icon_button.dart';
 import 'package:tela_login_fteam/widgets/generic_field/generic_field.dart';
@@ -67,7 +67,8 @@ class _CardLoginWidgetState extends State<CardLoginWidget> {
                   Navigator.pushAndRemoveUntil(
                       context,
                       MaterialPageRoute(
-                          builder: (BuildContext context) => ScreenCadastro()),
+                          builder: (BuildContext context) =>
+                              ScreenRegistration()),
                       ModalRoute.withName('/'));
                 },
                 child: GenericText(

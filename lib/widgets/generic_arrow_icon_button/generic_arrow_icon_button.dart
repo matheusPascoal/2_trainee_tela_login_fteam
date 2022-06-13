@@ -12,7 +12,7 @@ class GenericArrowButton extends StatelessWidget {
       onTap: onTap,
       child: Icon(
         Icons.arrow_circle_right,
-        size: size.width * 0.19,
+        size: size.width * 0.15,
         color: ScreenColors.primary,
       ),
     );

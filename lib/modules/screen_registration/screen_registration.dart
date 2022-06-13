@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:tela_login_fteam/modules/screen_registration/card_registration_widget.dart';
 
-
-class ScreenCadastro extends StatefulWidget {
-  const ScreenCadastro({Key? key}) : super(key: key);
+class ScreenRegistration extends StatefulWidget {
+  const ScreenRegistration({Key? key}) : super(key: key);
 
   @override
-  State<ScreenCadastro> createState() => _ScreenCadastroState();
+  State<ScreenRegistration> createState() => _ScreenRegistrationState();
 }
 
-class _ScreenCadastroState extends State<ScreenCadastro> {
+class _ScreenRegistrationState extends State<ScreenRegistration> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;

@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class GenericField extends StatelessWidget {
   final String? hintText;
   final TextEditingController? controller;
-  const GenericField({Key? key, this.hintText, this.controller})
+  final String? Function(String?)? validation;
+  const GenericField(
+      {Key? key, this.hintText, this.controller, this.validation})
       : super(key: key);
 
   @override
@@ -14,6 +16,7 @@ class GenericField extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(3.0),
         child: TextFormField(
+          validator: validation,
           controller: controller,
           decoration: InputDecoration(
             hintText: hintText!,
