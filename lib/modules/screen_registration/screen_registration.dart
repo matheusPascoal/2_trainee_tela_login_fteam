@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tela_login_fteam/core/image_fundo.dart';
 import 'package:tela_login_fteam/modules/screen_registration/card_registration_widget.dart';
 
 class ScreenRegistration extends StatefulWidget {
@@ -9,6 +10,7 @@ class ScreenRegistration extends StatefulWidget {
 }
 
 class _ScreenRegistrationState extends State<ScreenRegistration> {
+  late ImageFundo imagefundo;
   @override
   void initState() {
     super.initState();
@@ -28,7 +30,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(30)),
               child: Image.asset(
-                'assets/fundoo.PNG',
+                "assets/fundo.png",
                 fit: BoxFit.cover,
                 width: size.width * 1,
                 height: size.height * 0.4,

@@ -17,7 +17,7 @@ class GenericText extends StatelessWidget {
       children: [
         Text(text!,
             style: TextStyle(
-              fontSize: size!,
+              fontSize: size,
               color: color!,
               fontWeight: FontWeight.bold,
             )),

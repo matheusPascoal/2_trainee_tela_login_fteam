@@ -31,7 +31,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(30)),
               child: Image.asset(
-                'assets/fundoo.PNG',
+                'assets/fundo.png',
                 fit: BoxFit.cover,
                 width: size.width * 1,
                 height: size.height * 0.4,

@@ -34,7 +34,7 @@ class _CircleLoginCheckState extends State<CircleLoginCheck> {
           ),
           Text(
             'I agree to the Terms of Service and Privacy Policy.',
-            style: TextStyle(fontSize: 12),
+            style: TextStyle(fontSize: size.width * 0.03),
           )
         ],
       ),
